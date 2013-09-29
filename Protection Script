@@ -1,0 +1,36 @@
+PateBin is http://pastebin.com/hX3eDCDC
+
+function os.pullEvent()
+local event, p1, p2, p3, p4, p5 = os.pullEventRaw()
+if event == "terminate" then
+end
+return event, p1, p2, p3, p4, p5
+end
+
+term.clear()
+term.setCursorPos(1,1)
+print "Term Lock 1.1"
+print " "
+write ("Password: ")
+correctpass = "123" -Password (Default 123)
+pass = read("*")
+
+if pass == (correctpass) then
+term.clear()
+term.setCursorPos(1,1)
+write("Correct!")
+sleep(2)
+term.clear()
+term.setCursorPos(1,1)
+print "Welcome!"
+term.setCursorPos(1,3)
+
+sleep(4)
+
+
+else
+print 
+write("Incorrect Password!")
+sleep(1)
+os.reboot()
+end
